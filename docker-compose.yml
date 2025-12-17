@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  vue:
+    image: malaga-vue
+    container_name: malaga-vue
+    build: .
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/app
+      - /app/node_modules
